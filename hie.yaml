@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "assert4hs-hspec:lib"
+
+    - path: "./app/Main.hs"
+      component: "assert4hs-hspec:exe:assert4hs-hspec-exe"
+
+    - path: "./app/Paths_assert4hs_hspec.hs"
+      component: "assert4hs-hspec:exe:assert4hs-hspec-exe"
+
+    - path: "./test"
+      component: "assert4hs-hspec:test:assert4hs-hspec-test"
