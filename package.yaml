@@ -1,18 +1,19 @@
 name:                assert4hs-hspec
-version:             0.1.0.0
-github:              "githubuser/assert4hs-hspec"
-license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2021 Author name here"
+version:             0.1.0
+github:              "paweln1986/assert4hs-hspec"
+license:             "MIT"
+author:              "Pawel Nosal"
+maintainer:          "p.nosal1986@gmail.com"
+copyright:           "2021 Pawel Nosal"
+license-file:        "LICENSE.md"
 
 extra-source-files:
 - README.md
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            integration point of assert4hs and hspec
+category:            Testing
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
@@ -29,6 +30,11 @@ library:
   source-dirs: src
   reexported-modules:
     - Test.Fluent.Assertions
+    - Test.Fluent.Assertions.Maybe
+    - Test.Fluent.Assertions.List
+    - Test.Fluent.Assertions.Exceptions
+    - Test.Fluent.Assertions.Either
+    - Test.Fluent.Diff
 tests:
   assert4hs-hspec-test:
     main:                Spec.hs

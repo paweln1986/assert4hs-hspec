@@ -1,5 +1,12 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
+-- |
+-- Module      : Test.Fluent.Assertions.Core
+-- Description : Set util function for HSpec to execute assertions against given value.
+-- Copyright   : (c) Pawel Nosal, 2021
+-- License     : MIT
+-- Maintainer  : p.nosal1986@gmail.com
+-- Stability   : experimental
 module Test.Fluent.Hspec
   ( -- ** Assertion util functions for HSpec
     assertThat,
@@ -25,14 +32,6 @@ import Test.HUnit.Lang
   ( FailureReason (Reason),
     HUnitFailure (HUnitFailure),
   )
-
--- |
--- Module      : Test.Fluent.Assertions.Core
--- Description : Set util function to execute assertions against given value. Those functions integrates with HSpec.
--- Copyright   : (c) Pawel Nosal, 2021
--- License     : MIT
--- Maintainer  : p.nosal1986@gmail.com
--- Stability   : experimental
 
 -- | Verify if given `IO` action throws expected exception.
 assertThrows :: (HasCallStack, Exception e) => IO a -> ExceptionSelector e -> IO ()
